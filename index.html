@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#100d18">
+  <link rel="icon" href="data:,">
+  <title>BAYONETTA × JOJO — Eclipse Clash</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-shell" aria-label="Bayonetta JoJo fighting game">
+    <canvas id="game" width="1000" height="600" aria-label="2D fighting game arena"></canvas>
+    <div class="topline"><span class="brand">BAYONETTA <i>×</i> JOJO</span><span class="chapter">ECLIPSE CLASH <b>·</b> VERSE 01</span><button class="sound" id="sound" aria-label="Toggle sound">♫ <span>ON</span></button></div>
+    <div class="hud" id="hud" aria-hidden="true">
+      <section class="fighter left-hud"><div class="name-row"><b>BAYONETTA</b><span>THE UMBRA WITCH</span></div><div class="bar-frame"><div class="health" id="player-health"></div><div class="bar-gloss"></div></div><div class="meter-frame"><div class="meter" id="player-meter"></div></div></section>
+      <div class="round-clock"><small>TIME</small><strong id="clock">99</strong><span>✦ ✦ ✦</span></div>
+      <section class="fighter right-hud"><div class="name-row"><span>THE WORLD</span><b>DIO</b></div><div class="bar-frame"><div class="health enemy-health" id="enemy-health"></div><div class="bar-gloss"></div></div><div class="meter-frame"><div class="meter enemy-meter" id="enemy-meter"></div></div></section>
+    </div>
+    <div class="announcer" id="announcer"></div>
+    <div class="overlay" id="intro">
+      <div class="intro-card"><div class="eyebrow">A WITCH. A STAND. ONE FATE.</div><h1>BAYONETTA <span>×</span><br>JOJO</h1><p class="subtitle">ECLIPSE <em>CLASH</em></p><div class="divider"><span>✦</span></div><p class="story">When the clockwork moon cracks, only the bold can bend time.</p><button class="start-button" id="start">ENTER THE ARENA <span>→</span></button><div class="control-legend"><span><kbd>←</kbd><kbd>→</kbd> MOVE</span><span><kbd>J</kbd> PUNCH</span><span><kbd>K</kbd> KICK</span><span><kbd>L</kbd> DODGE</span><span><kbd>SPACE</kbd> WITCH TIME</span></div></div>
+    </div>
+    <div class="mobile-controls" id="mobile-controls" aria-label="Touch controls">
+      <div class="move-pad"><button data-key="ArrowLeft" aria-label="Move left">‹</button><button data-key="ArrowRight" aria-label="Move right">›</button></div>
+      <div class="action-pad"><button data-key="j">PUNCH</button><button data-key="k">KICK</button><button data-key="l">DODGE</button><button data-key="space" class="special-touch">WITCH<br>TIME</button></div>
+    </div>
+    <div class="footer"><span>AN IMPOSSIBLE CROSSOVER</span><span>MOVE <b>← →</b> &nbsp; ATTACK <b>J / K</b> &nbsp; DODGE <b>L</b> &nbsp; TIME <b>SPACE</b></span></div>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
